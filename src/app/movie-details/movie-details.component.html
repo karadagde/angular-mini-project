@@ -1,0 +1,5 @@
+<div class="movie-details-body">
+  <div *ngIf="movieDetails$ | async as movie">
+    <h2>{{ movie.title }}</h2>
+  </div>
+</div>

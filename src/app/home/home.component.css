@@ -1,0 +1,38 @@
+.main-container {
+      margin: auto;
+      width: 50%;
+      max-width: 100%;
+
+}
+
+.movie-container {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      border: 1px solid #aaa;
+      border-radius: 12px;
+      margin-bottom: 1%;
+}
+
+.img-container {
+      /* width: 30%; */
+      width: fit-content;
+      flex-basis: 25%;
+      display: flex;
+}
+
+.img-container>img {
+      max-width: 100%;
+      border-radius: 10px;
+}
+
+
+
+.movie-data-container>* {
+      margin: 0
+}
+
+h1 {
+      margin: 10px auto;
+      width: fit-content;
+}

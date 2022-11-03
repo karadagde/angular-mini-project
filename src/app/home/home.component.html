@@ -1,0 +1,20 @@
+<div class="main-container">
+  <h1>IMDB TOP 250 Movies</h1>
+  <div *ngFor="let movie of movies$ | async" class="movie-container">
+    <div class="img-container">
+      <img [src]="movie.image" alt="movie poster" loading="lazy" />
+    </div>
+    <div class="movie-data-container">
+      <nav>
+        <a [routerLink]="['/movies', movie.id]"
+          ><h3>{{ movie.title }}</h3></a
+        >
+      </nav>
+
+      <h4>{{ movie.fullTitle }}</h4>
+      <p>Year: {{ movie.year }}</p>
+      <p>Rating: {{ movie.imDbRating }}</p>
+      <p>Stars: {{ movie.crew }}</p>
+    </div>
+  </div>
+</div>
